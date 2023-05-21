@@ -1,0 +1,1 @@
+[![Build status](https://ci.appveyor.com/api/projects/status/webxw9pv0fbalikf?svg=true)](https://ci.appveyor.com/project/OGsplendid/async-await)
