@@ -1,10 +1,8 @@
 import GameSavingLoader from '../GameSavingLoader';
 
-jest.setTimeout(10000);
-
-test('should return correct object', async (done) => {
+test('should return correct object', async () => {
   const data = await GameSavingLoader.load();
-  expect(data).toEqual(
+  expect(JSON.parse(data)).toEqual(
     {
       id: 9,
       created: 1546300800,
@@ -16,5 +14,4 @@ test('should return correct object', async (done) => {
       },
     },
   );
-  done();
 });
